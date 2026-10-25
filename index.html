@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Suppress dev WebSocket / HMR connection errors in preview iframe environments
+      window.addEventListener('error', function(event) {
+        if (event.message && (
+          event.message.includes('WebSocket') || 
+          event.message.includes('@vite/client') || 
+          event.message.includes('createWebSocketModuleRunnerTransport')
+        )) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+          return true;
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason ? (event.reason.message || String(event.reason)) : '';
+        if (
+          reason.includes('WebSocket') || 
+          reason.includes('@vite/client') || 
+          reason.includes('createWebSocketModuleRunnerTransport')
+        ) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+          return true;
+        }
+      }, true);
+    </script>
+    <title>سكن بلس | Sakan Plus - سكن المستقبل يبدأ من هنا</title>
+    <meta name="description" content="منصة سكن بلس العقارية لبيع وشراء وتأجير العقارات والوحدات السكنية والتجارية مع التواصل المباشر عبر واتساب 01007775402." />
+    
+    <!-- OpenGraph Social Share Cards -->
+    <meta property="og:site_name" content="سكن بلس | Sakan Plus" />
+    <meta property="og:title" content="سكن بلس | Sakan Plus - سكن المستقبل يبدأ من هنا" />
+    <meta property="og:description" content="اكتشف أرقى العقارات والوحدات السكنية والتجارية في مصر للبيع والإيجار مع التواصل المباشر عبر واتساب 01007775402." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ais-pre-wyahaiiisybikn2tkpnl2v-737510897971.europe-west2.run.app" />
+    <meta property="og:image" content="https://ais-pre-wyahaiiisybikn2tkpnl2v-737510897971.europe-west2.run.app/og-banner.jpg" />
+    <meta property="og:image:secure_url" content="https://ais-pre-wyahaiiisybikn2tkpnl2v-737510897971.europe-west2.run.app/og-banner.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="سكن بلس - سكن المستقبل يبدأ من هنا | عقارات مصر" />
+    <link rel="image_src" href="https://ais-pre-wyahaiiisybikn2tkpnl2v-737510897971.europe-west2.run.app/og-banner.jpg" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="سكن بلس | Sakan Plus - سكن المستقبل يبدأ من هنا" />
+    <meta name="twitter:description" content="اكتشف أرقى العقارات والوحدات السكنية والتجارية في مصر للبيع والإيجار مع التواصل المباشر عبر واتساب 01007775402." />
+    <meta name="twitter:image" content="https://ais-pre-wyahaiiisybikn2tkpnl2v-737510897971.europe-west2.run.app/og-banner.jpg" />
+    <meta name="twitter:image:alt" content="سكن بلس - عقارات مصر" />
+
+    <!-- Favicon & PWA Icons -->
+    <link rel="icon" type="image/svg+xml" href="/sakan-logo.svg" />
+    <link rel="apple-touch-icon" href="/sakan-logo.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#f59e0b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="سكن بلس" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "سكن بلس | Sakan Plus",
+      "image": "/og-banner.jpg",
+      "description": "منصة سكن بلس العقارية لبيع وشراء وتأجير العقارات والوحدات السكنية والتجارية في مصر.",
+      "telephone": "+201007775402",
+      "priceRange": "$$",
+      "areaServed": "Egypt"
+    }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

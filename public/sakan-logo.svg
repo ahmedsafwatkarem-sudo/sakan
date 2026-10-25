@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Luxury Gold Main Gradient -->
+    <linearGradient id="goldMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="30%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+
+    <!-- Warm Amber Accent Gradient -->
+    <linearGradient id="amberLight" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#fffbeb" />
+    </linearGradient>
+
+    <!-- Cyan/Sky Architectural Accent -->
+    <linearGradient id="skyGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Outer Shadow -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Container with Golden Border Ring -->
+  <rect x="16" y="16" width="480" height="480" rx="110" fill="url(#bgGrad)" stroke="url(#goldMain)" stroke-width="5" filter="url(#cardShadow)" />
+
+  <!-- Ambient Golden Glow behind Architecture -->
+  <circle cx="256" cy="245" r="140" fill="#f59e0b" opacity="0.12" filter="url(#softGlow)" />
+
+  <!-- ARCHITECTURAL COMPOSITION -->
+  <g transform="translate(0, 15)">
+    <!-- High-rise Tower 1 (Left Background Tower) -->
+    <rect x="142" y="160" width="62" height="185" rx="6" fill="#1e293b" stroke="url(#goldMain)" stroke-width="3" opacity="0.85" />
+    <!-- Tower 1 Vertical Slits -->
+    <line x1="162" y1="175" x2="162" y2="325" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6,6" opacity="0.6" />
+    <line x1="184" y1="175" x2="184" y2="325" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6,6" opacity="0.6" />
+
+    <!-- Center High-rise Tower 2 (Taller Architectural Spire) -->
+    <path d="M214 120 L274 120 L274 345 L214 345 Z" fill="#0f172a" stroke="url(#goldMain)" stroke-width="3.5" />
+    <!-- Center Tower Windows Matrix -->
+    <line x1="234" y1="135" x2="234" y2="330" stroke="#fbbf24" stroke-width="3" stroke-dasharray="8,8" opacity="0.75" />
+    <line x1="254" y1="135" x2="254" y2="330" stroke="#fbbf24" stroke-width="3" stroke-dasharray="8,8" opacity="0.75" />
+    
+    <!-- Modern Luxury Villa Pitched Roof (Foreground Structure) -->
+    <!-- Left Gable Slope -->
+    <path d="M120 285 L256 160 L392 285" fill="none" stroke="url(#goldMain)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)" />
+    <!-- Inner Villa Wall -->
+    <path d="M152 285 L256 190 L360 285 L360 350 L152 350 Z" fill="#1e293b" fill-opacity="0.6" stroke="url(#goldMain)" stroke-width="3" stroke-linejoin="round" />
+
+    <!-- Stylized Modern Entrance Portal / Doorway -->
+    <path d="M236 350 L236 275 C236 264 245 255 256 255 C267 255 276 264 276 275 L276 350 Z" fill="url(#goldMain)" />
+
+    <!-- SAKAN PLUS SIGNATURE: THE RADIANT PLUS EMBLEM (+) -->
+    <!-- Positioned elegantly at the top apex representing "بلس" (Plus / Growth) -->
+    <g transform="translate(355, 140)" filter="url(#softGlow)">
+      <!-- Plus Outer Badge -->
+      <circle cx="28" cy="28" r="38" fill="url(#bgGrad)" stroke="url(#goldMain)" stroke-width="4" />
+      <circle cx="28" cy="28" r="30" fill="url(#goldMain)" opacity="0.2" />
+      
+      <!-- Plus Vertical Bar -->
+      <rect x="22" y="6" width="12" height="44" rx="6" fill="url(#amberLight)" />
+      <!-- Plus Horizontal Bar -->
+      <rect x="6" y="22" width="44" height="12" rx="6" fill="url(#amberLight)" />
+
+      <!-- Sparkling Core Star -->
+      <circle cx="28" cy="28" r="4.5" fill="#ffffff" />
+    </g>
+
+    <!-- Foundation Podium / Base Line -->
+    <rect x="100" y="358" width="312" height="9" rx="4.5" fill="url(#goldMain)" />
+    <rect x="140" y="374" width="232" height="5" rx="2.5" fill="url(#goldMain)" opacity="0.75" />
+  </g>
+</svg>

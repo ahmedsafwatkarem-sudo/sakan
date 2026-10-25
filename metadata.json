@@ -1,0 +1,6 @@
+{
+  "name": "سكن بلس | Sakan Plus",
+  "description": "منصة سكن بلس العقارية لبيع وشراء وتأجير العقارات والوحدات السكنية والتجارية مع التواصل المباشر عبر واتساب.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

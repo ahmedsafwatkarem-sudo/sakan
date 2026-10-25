@@ -1,0 +1,19 @@
+{
+  "short_name": "سكن بلس",
+  "name": "سكن بلس | Sakan Plus - منصة العقارات الأولى في مصر",
+  "description": "منصة سكن بلس العقارية لبيع وشراء وتأجير العقارات والوحدات السكنية والتجارية مع التواصل المباشر عبر واتساب 01007775402.",
+  "icons": [
+    {
+      "src": "/sakan-logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#090d16",
+  "theme_color": "#f59e0b",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "ar",
+  "dir": "rtl"
+}
